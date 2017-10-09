@@ -2,6 +2,9 @@
     "name": "-ionic-app",
     "version": "1.0.0",
     "description": "-ionic-app: A Basic Ionic project",
+	"scripts": {
+    "start": "node Server.js"    
+  },
     "dependencies": {
         "cordova-android": "^6.2.3",
         "cordova-plugin-console": "^1.0.7",

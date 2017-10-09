@@ -1,0 +1,23 @@
+<ion-view title="Side Effect">
+  <ion-content class="has-header wrapper">
+    <div class="list">
+
+      <div class="item item-divider">
+        <h2 class="text-bold">{{vm.sideEffectData.generic}}</h2>
+
+      </div>
+      <div ng-repeat="usage in vm.sideEffectData.side_effects">
+        <a class="item">
+
+          <p class="legal text-bold"  ng-click="toggle=!toggle">{{usage.term}} </p>
+          <div ng-if="toggle">
+          <p class="legal">Count:{{usage.count}}</p>
+          <p class="legal">Percentage:{{usage.percent}}</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

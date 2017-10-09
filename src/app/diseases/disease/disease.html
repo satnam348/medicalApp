@@ -1,0 +1,26 @@
+<ion-view title="Diseases">
+      <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-search search" ui-sref="tab.diseaseSearch" >
+           
+        </button>
+ </ion-nav-buttons>
+  <ion-content class=" wrapper ">
+  
+    <div class="card" ng-repeat="item in vm.allDiseaseList" >
+      <div class="item item-text-wrap">
+        <p> <b>Disease Name</b> {{item.disease_name}}</p>
+        <p> <b>Disease info</b> {{item.disease_info}}</p>
+        <p> <b>Disease Category</b> {{item.disease_cat}}</p>
+        
+      </div>
+      </div>
+    
+  </ion-content>
+  <ion-footer-bar class="footer">
+    <div class="button-bar " ng-if="vm.showPagination">
+      <button class="button  button-icon " ng-disabled="vm.btneDisable" ng-click="vm.prevPage()">Prev</button>
+      <button class="button  button-clear">{{vm.currentPage}}</button>
+      <button class="button button-icon  " ng-click="vm.nextPage()">Next</button>
+
+  </ion-footer-bar>
+</ion-view>

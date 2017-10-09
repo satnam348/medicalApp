@@ -1,0 +1,28 @@
+<ion-view title="Lab Test">
+      <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-search search" ui-sref="tab.labSearch" >
+           
+        </button>
+ </ion-nav-buttons>
+  <ion-content class=" wrapper ">
+  
+    <div class="card" ng-repeat="item in vm.allTests" >
+      <div class="item item-text-wrap">
+        <p> <b>Test Name</b> {{item.lab_test_name}}</p>
+        <p ng-if="item.alternate_name"> <b>Alternate Name</b> {{item.alternate_name}}</p>
+        <p ng-repeat="(key,value) in item.lab_test_data">
+          <b>{{key}} </b>: <span ng-bind-html="value"> {{value}}</span>
+        </p>
+        
+      </div>
+      </div>
+    
+  </ion-content>
+  <ion-footer-bar class="footer">
+    <div class="button-bar " ng-if="vm.showPagination">
+      <button class="button  button-icon " ng-disabled="vm.btneDisable" ng-click="vm.prevPage()">Prev</button>
+      <button class="button  button-clear">{{vm.currentPage}}</button>
+      <button class="button button-icon  " ng-click="vm.nextPage()">Next</button>
+
+  </ion-footer-bar>
+</ion-view>

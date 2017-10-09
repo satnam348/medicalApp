@@ -1,0 +1,269 @@
+/* Empty. Add your own CSS if you like */
+
+.wrapper .button-icon {
+  font-size: 22px;
+  color: #387ef5;
+}
+
+.loader {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #fdba2c;
+}
+
+.loader .bar {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  text-align: center;
+}
+
+.loader .bar:nth-child(1) {
+  background-color: #da4733;
+  animation: loading 3s linear infinite;
+}
+
+.loader .bar:nth-child(2) {
+  background-color: #3b78e7;
+  animation: loading 3s linear 1s infinite;
+}
+
+.loader .bar:nth-child(3) {
+  background-color: #fdba2c;
+  animation: loading 3s linear 2s infinite;
+}
+
+@keyframes loading {
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100;
+  }
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.loader-1 {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.loader-1:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: #2980b9;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    left: -200px;
+    width: 30%;
+  }
+  50% {
+    width: 30%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    left: 50%;
+  }
+  95% {
+    left: 120%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.item-accordion.item {
+  padding: 10px 16px 10px 35px;
+}
+
+.item-accordion.item a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #387ef5;
+}
+
+
+/*.bar.bar-positive {
+  border-color: #ff794f;
+  background-color: #ff794f;
+  background-image: none;
+}*/
+
+.list .icon {
+  color: #387ef5;
+  font-size: 20px;
+}
+
+.legal {
+  font-size: 10px !important;
+}
+
+.xsmall {
+  font-size: 12px !important;
+}
+
+.small {
+  font-size: 14px !important;
+}
+
+.lead {
+  font-size: 16px !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+a {
+  color: #387ef5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card,
+.list-inset {
+  margin: 0;
+  margin-top: 10px;
+  box-shadow: none;
+  border-bottom: 1px solid #ececec;
+}
+
+.pane,
+.view {
+  background: #f8f8f8;
+}
+
+.wrapper .footer .button-bar {
+  background: #fff;
+  margin-top: 10px;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  color: #387ef5 !important;
+}
+
+.searchResult {
+  position: relative;
+  z-index: 9999;
+  margin-top: 45px;
+  background: #fff;
+  height: 100vw;
+}
+
+.search::before {
+  font-size: 25px !important;
+}
+
+.tile {
+  color: #fff;
+  height: 150px;
+  padding: 20px;
+}
+
+.tile-double {
+  height: 300px;
+}
+
+
+/*.tile + .tile {
+  margin-top: 10px;
+  height: 140px;
+}*/
+
+.tile-icon {
+  padding: 0;
+  text-align: center;
+  font-size: 60px;
+  line-height: 150px;
+}
+
+.tile-title {
+  position: relative;
+  text-align: center;
+}
+
+.tile-title>h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+  margin: 0;
+}
+
+.tile-image {
+  text-shadow: 1px 1px 0 #000;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-a-0,
+.p-a-0>.col {
+  padding: 0px !important;
+}
+
+.loading-container .loading {
+  padding: 12px 20px;
+}
+
+.action-sheet .button {
+  min-height: auto;
+  line-height: 19px;
+  color: #387ef5;
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.action-sheet-title {
+  padding: 12px 0;
+  color: #387ef5;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+.interaction .item p {
+  overflow: visible;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.slider-slide img {
+  max-width: 100%;
+}

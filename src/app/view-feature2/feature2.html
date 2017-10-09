@@ -1,0 +1,22 @@
+<ion-view title="Playlist">
+  <ion-nav-buttons side="left">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+   <ion-nav-buttons side="right">
+    <button class="button button-icon icon " ng-class="vm.data.showReorder?'ion-android-close':'ion-android-funnel' " ng-click="vm.data.showDelete = false; vm.data.showReorder = !vm.data.showReorder">
+           
+        </button>
+   </ion-nav-buttons>
+
+  <ion-content class="has-header">
+    <ion-list  show-reorder="vm.data.showReorder">
+
+      <ion-item ng-repeat="menu in vm.menuList.submenu" href="#/tab/feature1" class="item-icon-right">
+        {{menu}} <i class="icon ion-arrow-right-c"></i>
+        <ion-reorder-button class="ion-drag" on-reorder="vm.moveItem(menu, $fromIndex, $toIndex)"></ion-reorder-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-view>

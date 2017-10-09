@@ -1,0 +1,24 @@
+<ion-view title="Medicines Interaction">
+
+  <ion-content class="has-header wrapper">
+  
+    <div class="list">
+
+      <div class="item item-divider">
+        <h2 class="text-bold">{{vm.medicineInteractionsList.generic}}</h2>
+
+      </div>
+      <div ng-repeat="item in vm.medicineInteractionsList.interactions" class="interaction">
+        <a class="item">
+
+          <p class="xsmall " ><b>{{item.description}} </b></p>
+       
+          <p class="xsmall" ><b>Interaction with </b>:<span ng-repeat="i in item.items"> {{i.name}} <span ng-if="$last -1">&</span></span></p>
+        
+          
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

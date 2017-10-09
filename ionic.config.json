@@ -1,0 +1,14 @@
+{
+  "name": "-ionic-app",
+  "app_id": "11098a4e",
+  "gulpStartupTasks": [
+    "inject",
+    "watch"
+  ],
+  "documentRoot": "src",
+  "watchPatterns": [
+    "src/**/*",
+    "src/.tmp/**/*"
+  ],
+  "type": "ionic1"
+}

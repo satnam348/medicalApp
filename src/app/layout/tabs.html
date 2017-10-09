@@ -1,0 +1,51 @@
+  <ion-side-menus enable-menu-with-back-views="false" ng-controller="layout" >
+  <ion-side-menu-content class="post-size-14px">
+    <ion-nav-bar class="bar app-top-bar bar-header bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+         <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-search search" ui-sref="tab.search" >
+           
+        </button>
+   </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+  
+  
+  <ion-side-menu side="left" class="main-menu" >
+    <header class="bar bar-header bar-positive">
+      <h1 class="title">Healthify</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+
+<ion-item nav-clear menu-close href="#/tab/feature3">
+       Home
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/tab/feature2">
+        Medicines
+        </ion-item>
+      
+        <ion-item nav-clear menu-close href="#/tab/labTest">
+         Lab Test
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/tab/diseases">
+        Diseases
+        </ion-item>
+          <ion-item nav-clear menu-close href="#/tab/Exercises">
+         Excercises
+        </ion-item>
+         </ion-item>
+          <ion-item nav-clear menu-close href="#/tab/Generics">
+         Generics
+        </ion-item>
+      </ion-list>
+      
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,32 @@
+<ion-view title="Similar Medicines">
+
+  <ion-content class="has-header wrapper">
+    <ul class="list" ng-if="vm.searchlist">
+      <li class="item" ng-if=" vm.error">Sorry No Data Found </li>
+      <li class="item" ng-repeat="item in  vm.medicinesList" ng-click="vm.searchMedicine(item.name)">{{item.name}}</li>
+    </ul>
+
+    <div class="card" ng-repeat="item in vm.allMedicines">
+      <div class="item item-text-wrap">
+        <p> <b>Medicine Name</b> {{item.name}}</p>
+        <p> <b>Manufacturer</b> {{item.manufacturer}}</p>
+        <p><b>Prescription </b>{{item.schedule.label}}</p>
+
+        <p> <b>Price</b> Rs. {{item.price}}</p>
+        <p><b>Size </b>{{item.size}}</p>
+        <p><b>Constituents</b> {{item.constituents[0].name}} {{item.constituents[0].strength}} </p>
+
+      </div>
+      <div class="row">
+        <div class="col legal text-bold text-center"><a ng-click="vm.options(item)">View Options</a></div>
+
+      </div>
+
+    </div>
+
+
+
+
+    </div>
+  </ion-content>
+</ion-view>

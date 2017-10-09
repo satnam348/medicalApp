@@ -1,0 +1,39 @@
+<ion-view title="Search Lab Test">
+      <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-search search" ui-sref="tab.labSearch" >
+           
+        </button>
+ </ion-nav-buttons>
+  <ion-header-bar class="bar-subheader item-input-inset">
+    <label class="item-input-wrapper">
+    <i class="icon placeholder-icon  ion-ios-search"></i>
+   <input type="search" placeholder="Search" ng-change="vm.search(vm.searchparam)" ng-model="vm.searchparam" ng-model-options="{debounce: 1000}" />
+   <i class="icon placeholder-icon  ion-close-circled" ng-click="vm.clearModal()"></i>
+  </label>
+    <button class="button button-clear" ng-click="vm.clearModal()"> 
+    Search
+  </button>
+  </ion-header-bar>
+  <ion-content class="has-header">
+    <ul class="list" ng-if="vm.searchlist">
+      <li class="item" ng-if=" vm.error">Sorry No Data Found </li>
+      <li class="item" ng-repeat="item in  vm.allLabTestsLists" ng-click="vm.searchLabTest(item.lab_test_name)">{{item.lab_test_name}}</li>
+    </ul>
+
+    <div class="card" ng-repeat="item in  vm.allLabTests">
+      <div class="item item-text-wrap">
+         <p> <b>Test Name</b> {{item.lab_test_name}}</p>
+        <p ng-if="item.alternate_name"> <b>Alternate Name</b> {{item.alternate_name}}</p>
+        <p ng-repeat="(key,value) in item.lab_test_data">
+          <b>{{key}} </b>: <span ng-bind-html="value"> {{value}}</span>
+        </p>
+      
+
+      </div>
+     
+    </div>
+
+
+  </ion-content>
+
+</ion-view>

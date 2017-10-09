@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">   
+
+ 
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+    <!--<script src="http://code.ionicframework.com/1.3.3/js/ionic.bundle.js"></script>-->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+
+    <!-- cordova script -->
+    <script src="cordova.js"></script>
+
+</head>
+<body ng-app="app">
+
+<div class="loader" ng-if="stateIsLoading" >
+
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+
+</div>
+<!--<div class="loader-1"  ></div> -->
+<ion-nav-view></ion-nav-view>
+
+<!-- inject:js -->
+<script src="app/app.module.js"></script>
+<script src="app/app.config.js"></script>
+
+<script src="app/app.routes.js"></script>
+<script src="app/app.run.js"></script>
+<script src="app/constant/apiUrls.js"></script>
+<script src="app/core/ConnectivityMonitor.js"></script>
+<script src="app/core/app.core.module.js"></script>
+<script src="app/core/authorization.service.js"></script>
+<script src="app/core/commonservices.js"></script>
+<script src="app/core/dataService.js"></script>
+<script src="app/core/httpInterceptor.js"></script>
+<script src="app/core/httpRequestService.js"></script>
+<script src="app/core/lodash.js"></script>
+<script src="app/core/utilService.js"></script>
+<script src="app/layout/layoutController.js"></script>
+<script src="app/view-feature1/feature1.controller.js"></script>
+<script src="app/view-feature1/feature1.routes.js"></script>
+<script src="app/view-feature2/feature2.controller.js"></script>
+<script src="app/view-feature2/feature2.routes.js"></script>
+<script src="app/view-feature3/feature3.controller.js"></script>
+<script src="app/view-feature3/feature3.routes.js"></script>
+<script src="app/Exercises/exercise/Exercise.controller.js"></script>
+<script src="app/Exercises/exercise/Exercise.routes.js"></script>
+<script src="app/Exercises/search/ExerciseSearch.controller.js"></script>
+<script src="app/Exercises/search/ExerciseSearch.routes.js"></script>
+<script src="app/Generics/generic/Generics.controller.js"></script>
+<script src="app/Generics/generic/Generics.routes.js"></script>
+<script src="app/Generics/search/GenericsSearch.controller.js"></script>
+<script src="app/Generics/search/GenericsSearch.routes.js"></script>
+<script src="app/LabTest/search/labSearch.controller.js"></script>
+<script src="app/LabTest/search/labSearch.routes.js"></script>
+<script src="app/LabTest/tests/labTest.controller.js"></script>
+<script src="app/LabTest/tests/labTest.routes.js"></script>
+<script src="app/coreComponents/search/search.controller.js"></script>
+<script src="app/coreComponents/search/search.routes.js"></script>
+<script src="app/diseases/disease/disease.controller.js"></script>
+<script src="app/diseases/disease/disease.routes.js"></script>
+<script src="app/diseases/search/diseaseSearch.controller.js"></script>
+<script src="app/diseases/search/diseaseSearch.routes.js"></script>
+<script src="app/views/alternateMedicines/alternateMedicines.controller.js"></script>
+<script src="app/views/alternateMedicines/alternateMedicines.routes.js"></script>
+<script src="app/views/medicineInteractions/medicineInteractions.controller.js"></script>
+<script src="app/views/medicineInteractions/medicineInteractions.routes.js"></script>
+<script src="app/views/popularUsage/popularUsage.controller.js"></script>
+<script src="app/views/popularUsage/popularUsage.routes.js"></script>
+<script src="app/views/sideEffect/sideEffect.controller.js"></script>
+<script src="app/views/sideEffect/sideEffect.routes.js"></script>
+<script src="app/views/similarMedicines/similarMedicines.controller.js"></script>
+<script src="app/views/similarMedicines/similarMedicines.routes.js"></script>
+<!-- endinject -->
+
+<!--<script src=".tmp/templates.js"></script>-->
+</body>
+</html>

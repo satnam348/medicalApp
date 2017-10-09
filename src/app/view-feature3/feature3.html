@@ -1,0 +1,48 @@
+<ion-view title="Playlist">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header wrapper">
+      <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="vm.doRefresh()">
+  </ion-refresher>
+
+
+
+   <ion-slide-box pager-click="navSlide(index)" auto-play="true" does-continue="true" slide-interval="3000">
+    <ion-slide ng-repeat="i in [1,2,3,4]">
+       <img ng-src="images/{{i}}.png">  
+      
+         </ion-slide>
+   
+</ion-slide-box>
+    <div class="row p-a-0">
+      <div class="col">
+        <div class="tile royal-bg tile-icon">
+          <i class="ion-ios-medical"></i>
+        </div>
+      </div>
+      <div class="col">
+        <div class="tile dark-bg tile-icon"> <i class="ion-ios-pulse-strong"></i></div>
+      </div>
+      <div class="col">
+        <div class="tile positive-bg tile-icon" > <i class="ion-android-search"></i></div>
+      </div>
+    </div>
+
+    <div class="row p-a-0">
+      <div class="col">
+        <div class="tile balanced-bg tile-icon">
+          <i class="ion-medkit"></i>
+        </div>
+      </div>
+      <div class="col">
+        <div class="tile calm-bg tile-icon"> <i class="ion-erlenmeyer-flask"></i></div>
+      </div>
+      <div class="col">
+        <div class="tile assertive-bg tile-icon"> <i class="ion-clipboard"></i></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

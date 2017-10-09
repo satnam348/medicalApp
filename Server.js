@@ -4,7 +4,7 @@ var router = express.Router();
 
 app.use(express.static(__dirname + '/dist'));
 app.get('*', function (req, res) {
-  res.sendfile('./dist/index.html'); });
+  res.sendfile('./src/index.html'); });
 
 port = process.env.PORT || 8080;
 
